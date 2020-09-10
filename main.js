@@ -11,22 +11,16 @@
 
 
 
-
+// MAPA-------->
 $( document ).ready( function() {
 
-$('body').noisy({
-    intensity: 0.2,
-    size: 200,
-    opacity: 0.28,
-    randomColors: false, // true by default
-    color: '#000000'
-});
+
 function initialize() {
     var myLatlng = new
     google.maps.LatLng(19.4876,-98.8689);
     var imagePath = 'http://m.schuepfen.ch/icons/helveticons/black/60/Pin-location.png'
     var mapOptions = {
-      zoom: 11,
+      zoom: 9,
       center: myLatlng,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     }
