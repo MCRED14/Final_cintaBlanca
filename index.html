@@ -1,15 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Proyecto Final</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- BARRA DE NAVEGACIÓN-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="contact">
+      <nav class="navbar navbar-dark bg-primary">
+        <a class="navbar-brand font-weight-bold" href="#">
+        <img src="LogoAtomG.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+        Atom Gourmet
+        </a>
+      </nav>
+      <ul class="navbar-nav  ml-auto mt-2 mt-lg-0" >
+        <li class="nav-item">
+          <a class="nav-link" href="file:///C:/Users/PAVILION/Desktop/git-prueba-44/Final_cintaBlanca/index.html">Promociones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///C:/Users/PAVILION/Desktop/git-prueba-44/Final_cintaBlanca/contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///C:/Users/PAVILION/Desktop/git-prueba-44/Final_cintaBlanca/orden.html#">Orden</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 
+  <!-- CARRUSEL DE IMÁGENES -->
+ <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+   <ol class="carousel-indicators">
+     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+   </ol>
+   <div class="carousel-inner">
+     <div class="carousel-item active">
+       <img src="https://picsum.photos/seed/picsum/400/200" class="d-block w-100" alt="...">
+     </div>
+     <div class="carousel-item">
+       <img src="https://picsum.photos/seed/picsum/400/200" class="d-block w-100" alt="...">
+     </div>
+     <div class="carousel-item">
+       <img src="https://picsum.photos/seed/picsum/400/200" class="d-block w-100" alt="...">
+     </div>
+   </div>
+   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="sr-only">Previous</span>
+   </a>
+   <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="sr-only">Next</span>
+   </a>
+ </div>
+
+ <!-- ENCABEZADO PROMOCIONES -->
+ <div class="jumbotron jumbotron-fluid d-flex justify-content-around col-md-12 col-sm-12">
+   <div class="col-md-4 col-sm-4">
+    <img src="https://picsum.photos/seed/picsum/600/400" class="card-img rounded-pill" alt="...">
+  </div>
+   <div class="container text-center py-5">
+     <h1 class="display-4">Fluid jumbotron</h1>
+     <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+   </div>
+ </div>
+
+ <!-- TARJETAS PEDIDOS -->
+ <div class="card-deck mx-5 mb-3">
+   <div class="card" style="width: 18rem;">
+     <img src="torta-de-huevo.jpg" class="card-img-top" alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Torta de huevo</h5>
+       <p class="card-text">La deliciosa torta tradicional de huevo, con chile jalapeño y papas fritas.</p>
+     </div>
+     <!-- Button trigger modal -->
+     <button id="torta" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+       Realizar pedido
+     </button>
+   </div>
+   <div class="card" style="width: 18rem;">
+     <img src="Huaraches.jpg" class="card-img-top" alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Huarache a la mexicana</h5>
+       <p class="card-text">Sensacional combinación de sabores: Huarache con mole y costilla.</p>
+     </div>
+     <!-- Button trigger modal -->
+     <button id="huarache" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+       Realizar pedido
+     </button>
+   </div>
+   <div class="card" style="width: 18rem;">
+     <img src="minipizza.jpg" class="card-img-top" alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Mini Pizzas</h5>
+       <p class="card-text">4 sabores en un mismo combo: Hawaiana, Pepperoni, Champiñones y 3 quesos.</p>
+     </div>
+     <!-- Button trigger modal -->
+     <button id="minipizza" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+       Realizar pedido
+     </button>
+   </div>
+ </div>
+
+ <div class="card-deck mx-5 mt-3">
+   <div class="card" style="width: 18rem;">
+     <img src="hamburger.jpg" class="card-img-top" alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Hamburguesa</h5>
+       <p class="card-text">Preparada con carne de calidad premium y sazonada con la receta de la casa.</p>
+     </div>
+     <!-- Button trigger modal -->
+     <button id="hamburguesa" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+       Realizar pedido
+     </button>
+   </div>
+   <div class="card" style="width: 18rem;">
+     <img src="tamales.jpg" class="card-img-top" alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Tamales Oaxaqueños</h5>
+       <p class="card-text">Sabor inigualable que le da su preparación con auténtico mole oaxaqueño.</p>
+     </div>
+     <!-- Button trigger modal -->
+     <button id = "tamales"type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+       Realizar pedido
+     </button>
+   </div>
+   <div class="card" style="width: 18rem;">
+     <img src="ensalada.jpg" class="card-img-top" alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Ensalada Griega</h5>
+       <p class="card-text">Preparada con los ingredientes más frescos y de temporada. Agrega el aderezo que mas te guste!</p>
+     </div>
+     <!-- Button trigger modal -->
+     <button id="ensalada" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+       Realizar pedido
+     </button>
+   </div>
+ </div>
+
+ <!-- Modal -->
+ <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-scrollable">
+     <div class="modal-content">
+       <div class="imageModal">
+         <img src="https://picsum.photos/seed/picsum/200/100" class="card-img-top" alt="...">
+       </div>
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">PEDIDO</h5>
+         <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+         <!-- <span aria-hidden="true">&times;</span>
+           </button> -->
+       </div>
+       <div class="modal-body">
+         <p id="pedido"></p>
+         <div class="inputs">
+           <h5 class="text-center">DATOS PERSONALES</h5>
+           <div class="input-group input-group-sm mb-3">
+             <div class="input-group-prepend">
+               <span class="input-group-text" >NOMBRE</span>
+             </div>
+             <input id="nombre" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+           </div>
+           <div class="input-group input-group-sm mb-3">
+             <div class="input-group-prepend">
+               <span class="input-group-text" >DIRECCIÓN</span>
+             </div>
+             <input id="direccion" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+           </div>
+           <div class="input-group input-group-sm mb-3">
+             <div class="input-group-prepend">
+               <span class="input-group-text" >TELÉFONO</span>
+             </div>
+             <input id="telefono" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+           </div>
+           <div class="input-group mb-3">
+             <div class="input-group-prepend">
+               <label class="input-group-text" for="bebida">BEBIDA</label>
+             </div>
+             <select class="custom-select" id="bebida">
+               <option selected>Elige tu bebida</option>
+               <option value="agua">AGUA</option>
+               <option value="refresco">REFRESCO</option>
+               <option value="te">TÉ</option>
+             </select>
+           </div>
+           <div class="adicionales">
+             <h5 class="text-center">ADICIONALES</h5>
+             <div id="adicionales" class="custom-control custom-checkbox">
+               <input  id="cubiertos" type="checkbox" class="custom-control-input" id="cubiertos">
+               <label class="custom-control-label" for="cubiertos">Cubiertos</label>
+             </div>
+             <div class="custom-control custom-checkbox">
+               <input id="salsas" type="checkbox" class="custom-control-input" id="salsa">
+               <label class="custom-control-label" for="salsa">Salsa extra</label>
+             </div>
+             <div class="custom-control custom-checkbox">
+               <input id="pan" type="checkbox" class="custom-control-input" id="pan">
+               <label class="custom-control-label" for="pan">Pan</label>
+             </div>
+             <div class="form-group mt-3">
+               <label for="exampleFormControlTextarea1">Comentarios</label>
+               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+             </div>
+           </div>
+         </div>
+       </div>
+       <!-- Botón del modal -->
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-dismiss="modal">Regresar</button>
+         <button id = "ordenar" type="button" class="btn btn-primary">Ordenar</button>
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <footer class="footer mt-5 py-3 ">
+   <div class="container">
+     <div class="social-icons d-flex justify-content-center">
+       <a class="social-icon social-icon--twitter" href="https://twitter.com/?lang=es">
+         <i class="fa fa-twitter"></i>
+         <div class="tooltip">Twitter</div>
+       </a>
+       <a class="social-icon social-icon--instagram" href="https://www.instagram.com/?hl=es-la">
+         <i class="fa fa-instagram"></i>
+         <div class="tooltip">Instagram</div>
+       </a>
+       <a class="social-icon social-icon--facebook" href="https://www.facebook.com/">
+         <i class="fa fa-facebook"></i>
+         <div class="tooltip">Facebook</div>
+       </a>
+     </div>
+   </div>
+ </footer>
 
 
 
