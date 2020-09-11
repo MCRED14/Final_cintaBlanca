@@ -1,4 +1,11 @@
 
 body {
-background-color: #e5fac8;
+background-color: #FF7F32;
+}
+ .jumbotron {
+   background: #FFA06A;
+ }
+
+footer {
+  background: red;
 }
