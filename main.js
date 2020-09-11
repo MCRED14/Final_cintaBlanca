@@ -73,16 +73,14 @@ const generarOrden = () => {
 
 
 
-
-//
-// for (var i = 0; i < botones.length; i++) {
-//   if (botones[i].id === 'torta') {
-//     botones[i].addEventListener('click', () => pedido.innerHTML += 'Torta de huevo<br>');
-//   } else if (botones[i].id === 'huarache') {
-//     botones[i].addEventListener('click', () => pedido.innerHTML += 'Huarache a la mexicana<br>');
-//   } else if (botones[i].id === 'chilaquiles') {
-//     botones[i].addEventListener('click', () => pedido.innerHTML += 'Chilaquiles con carne<br>');
-//   }
-// }
+for (var i = 0; i < botones.length; i++) {
+  if (botones[i].id === 'torta') {
+    botones[i].addEventListener('click', () => pedido.innerHTML += 'Torta de huevo<br>');
+  } else if (botones[i].id === 'huarache') {
+    botones[i].addEventListener('click', () => pedido.innerHTML += 'Huarache a la mexicana<br>');
+  } else if (botones[i].id === 'chilaquiles') {
+    botones[i].addEventListener('click', () => pedido.innerHTML += 'Chilaquiles con carne<br>');
+  }
+}
 
 ordenar.addEventListener('click', generarOrden);
